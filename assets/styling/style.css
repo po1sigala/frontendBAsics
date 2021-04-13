@@ -10,4 +10,22 @@
 }
 .row {
     display: flex;
+    padding: 0;
+}
+.underline {
+    border-bottom: black;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+.btn {
+    color: white;
+}
+.content {
+    background-color: rgba(182, 182, 182, 0.658);
+}
+.small-text {
+    font-size: small;
+}
+.title {
+    opacity: 70%;
 }
