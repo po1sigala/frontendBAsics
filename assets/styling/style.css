@@ -29,3 +29,11 @@
 .title {
     opacity: 70%;
 }
+.pass {
+    border-style: solid;
+    border-color: green;
+}
+.fail {
+    border-style: solid;
+    border-color: red;
+}

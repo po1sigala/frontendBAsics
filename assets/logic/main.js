@@ -15,9 +15,12 @@ let matchRQ = () => {
     let match = regEx.test(fileName);
 
     if (match === true) {
+        document.getElementById("paperworkdiv").setAttribute("class", "pass");
+        console.log("should be green");
         return;
     } else {
-        alert("paperwork doesnt match");
+        document.getElementById("paperworkdiv").setAttribute("class", "fail");
+        console.log("should be red");
     }
 };
 document
