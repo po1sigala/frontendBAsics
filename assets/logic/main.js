@@ -23,6 +23,18 @@ let matchRQ = () => {
         console.log("should be red");
     }
 };
+let changeUploadStatus = (event) => {
+    let inputStatus = document.getElementById("exampleFormControlFile1")
+        .disabled;
+    if (inputStatus === false) {
+        document.getElementById("exampleFormControlFile1").disabled = true;
+    } else {
+        document.getElementById("exampleFormControlFile1").disabled = false;
+    }
+};
 document
     .getElementById("exampleFormControlFile1")
     .addEventListener("change", matchRQ);
+document
+    .getElementById("noPaperwork")
+    .addEventListener("click", changeUploadStatus);
